@@ -1,3 +1,5 @@
+package stack;
+
 public class Tumpukan {
     public static void main(String[] args) {
         stack a = new stack();

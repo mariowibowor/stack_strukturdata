@@ -1,3 +1,5 @@
+package stack;
+
 public class stack {
     node topganjil;
     node topgenap;
@@ -30,7 +32,7 @@ public class stack {
 
     public void popganjil(){
         if(ganjilisEmpty()){
-            System.out.println("Tumpukan Ganjil kosong");
+            System.out.println("stack.Tumpukan Ganjil kosong");
         } else {
             node tmp = topganjil;
             topganjil = tmp.getPointer().getPointer();
@@ -40,7 +42,7 @@ public class stack {
 
     public void popgenap(){
         if(genapisEmpty()){
-            System.out.println("Tumpukan Genap kosong");
+            System.out.println("stack.Tumpukan Genap kosong");
         } else {
             node tmp = topgenap;
             topgenap = tmp.getPointer();
@@ -66,13 +68,13 @@ public class stack {
     public void cetakNode(){
         node tmp = topganjil;
         node tmp2 = topgenap;
-        System.out.println("Isi dari kedua stack sekarang:");
-        System.out.println("Isi dari stack Ganjil:");
+        System.out.println("Isi dari kedua stack.stack sekarang:");
+        System.out.println("Isi dari stack.stack Ganjil:");
         for (int i = 0;i<numberganjil;i++){
             System.out.println(tmp.getData());
             tmp = tmp.getPointer();
         }
-        System.out.println("Isi dari stack Genap:");
+        System.out.println("Isi dari stack.stack Genap:");
         for (int i = 0;i<numbergenap;i++){
             System.out.println(tmp2.getData());
             tmp2 = tmp2.getPointer();
